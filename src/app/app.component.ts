@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'chat';
+  title = 'Home';
 }
+
+import { ClickMeComponent } from './click.me.component';
+import { BrowserModule } from '@angular/platform-browser';
+
+@NgModule({
+   imports: [BrowserModule],
+   declarations: [ClickMeComponent],
+   providers: [],
+   bootstrap: [AppComponent]
+})
+
+export class AppModule {}
